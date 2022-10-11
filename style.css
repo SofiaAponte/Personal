@@ -1,0 +1,267 @@
+h1{
+    font-family: 'Kotta One', serif; 
+    font-size: 45px;
+    color: #bde0fe;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 30px;
+    color: #A01A7D; 
+    text-align: center;
+    
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #fdfcdc; 
+
+}
+
+body{
+    background-color: #C884A6;
+    
+}
+
+button{
+    font-family: 'Kotta One', serif;
+    font-size: 25px;
+    background-color: #A01A7D;
+    color: #a2d2ff;
+    text-align: center;
+    /*This will change the border look*/
+    border-radius: 10px;
+    /*This will change the area outside the border AKA my margin*/
+    margin: 20px;
+    /*This will clear the space around the actual content*/
+    padding: 10px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 20px;
+    
+}
+
+a{
+   color: #fdfcdc; 
+    
+}
+
+/*End all of my type selectors*/
+
+/*This will change the hover button color*/
+button:hover{
+    color: #C884A6; 
+    
+}
+
+/*This will change our a tag when we initially see them*/
+a:link{
+    color: #A01A7D;
+    
+}
+
+a:visited{
+    color: #bde0fe;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: #bde0fe;
+    
+}
+
+/*the following code is for divs with attribute of id after*/
+#header{
+    width: 850px;
+    background: #E7BBE3;
+    margin: auto;   
+    
+}
+
+#nav{
+    background-color: #a2d2ff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #bde0fe;
+    border-width: 5px;
+    max-width: 850px;
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+}
+
+/*BOX MODEL FOR OUR SPACE AROUND OUR CONTAINERS 
+
+1st is our content inside --> then padding --> then border --> then margin*/
+
+#nav li{
+    font-family: 'Quicksand', sans-serif;
+    display: inline;
+    /*this will change the spacing around anything in my nav bar that is an li tag*/ 
+    border: 2px;
+    padding: 20px;
+    margin: 8px;
+    
+}
+
+#nav a{
+    font-family: 'Quicksand', sans-serif;
+    color: #fdfcdc;
+    display: inline;
+    /*this will change the spacing around anything in my nav bar that is an li tag*/ 
+    border: 15px;
+    padding: 20px;
+    margin: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+#nav a:hover{
+    color: #bde0fe;
+    
+    
+}
+
+/*This is an ID selector for all of my body content AKA for my div id-"section" in my HTML*/
+
+#section{
+    width: 850px;
+    background: #C884A6;
+    display: flex;
+    display: block;
+    margin: auto;
+}
+
+#section img{
+    margin: auto;
+    padding: 20px;
+    max-width: 100%;
+    width: 65%;
+    display: flex;
+    
+}
+
+#section h1{
+    margin: auto;
+    padding: 20px;
+    
+}
+
+/*This will specifically change my p tags in my section id selector*/
+
+#section p{
+    margin: auto;
+    padding: 10px;
+    
+}
+
+#section button{
+    margin: auto;
+    padding-right: 3px;
+    display: flex;
+    
+}
+
+/*This is an id selector for my footer content*/
+
+#footer{
+    background: #C884A6;
+    text-align: center;
+    display: inline;
+    margin: 35px;
+    padding: 50px;
+    width: 850px;
+}
+
+#footer li{
+    display: inline;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #fdfcdc;
+    border-radius: 10px;
+    margin: 15px;
+    
+}
+
+#footer p{
+    font-family: 'Kotta One', serif; 
+    font-size: 13px;
+    color: #bde0fe;
+    display: inline;
+    
+}
+
+#footer p:hover{
+    color: #A01A7D;
+    
+}
+
+#footer a{
+    font-family: 'Kotta One', serif; 
+    font-size: 13px;
+    color: #A01A7D; 
+    margin; 4px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    color: #a2d2ff;  
+}
+
+.container{
+    background-color: #a2d2ff;
+    /*position static means that this property will not allow this element to be affected by the properties surrounding it*/
+    position: static;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    color: #A01A7D;
+}
+
+/*contact form code*/
+
+/*This code below is going to style our text properties and values on or contact form*/
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 10px;
+    border-radius: 6px;
+    
+}
+
+input[type=submit]{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #C884A6;
+    color: #fdfcdc;
+    width: 100%;
+    border-radius: 5px;
+    border-color: #fdfcdc;
+    padding: 12px 20px;
+    
+}
+
+input[type=submit]:hover{
+    background-color: #A01A7D;
+}
+
+/*This code below is going to add styling to the subject in my contact form*/
+textarea[id=subject]{
+    font-family: 'Kotta One', serif;
+    padding: 12px 15px;
+    width: 100%;
+    margin: 3px 2px;
+    border: 8px;
+    border-color: #fdfcdc;
+    border-radius: 4px;
+    
+}
